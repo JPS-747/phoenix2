@@ -520,7 +520,8 @@ export const links = [
     title: "Apps",
     links: [
       {
-        name: "Task Manager",
+        name: "calendar",
+        menu: "Task Manager",
         icon: <AiOutlineCalendar />,
       },
     ],
@@ -530,14 +531,17 @@ export const links = [
     links: [
       {
         name: "Classes",
+        menu: "Classes",
         icon: <AiOutlineCalendar />,
       },
       {
         name: "Products",
+        menu: "Products",
         icon: <AiOutlineCalendar />,
       },
       {
         name: "employees",
+        menu: "employees",
         icon: <IoMdContacts />,
       },
     ],
@@ -547,35 +551,38 @@ export const links = [
     links: [
       {
         name: "line",
+        menu: "line",
         icon: <AiOutlineStock />,
       },
       {
         name: "area",
+        menu: "area",
         icon: <AiOutlineAreaChart />,
       },
 
       {
         name: "bar",
+        menu: "bar",
         icon: <AiOutlineBarChart />,
       },
       {
         name: "pie",
+        menu: "pie",
         icon: <FiPieChart />,
       },
       {
         name: "financial",
+        menu: "financial",
         icon: <RiStockLine />,
       },
       {
-        name: "color-mapping",
-        icon: <BsBarChart />,
-      },
-      {
         name: "pyramid",
+        menu: "pyramid",
         icon: <GiLouvrePyramid />,
       },
       {
         name: "stacked",
+        menu: "stacked",
         icon: <AiOutlineBarChart />,
       },
     ],

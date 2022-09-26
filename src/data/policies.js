@@ -35,7 +35,7 @@ export const policyGrid = [
   {
     field: "PolicyNo",
     headerText: "PolicyNo",
-    width: "120",
+    width: "220",
     textAlign: "Left",
     isPrimaryKey: true,
   },
