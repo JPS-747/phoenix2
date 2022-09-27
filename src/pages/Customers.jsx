@@ -1,5 +1,5 @@
 import React from 'react';
-import { GridComponent, ColumnsDirective, ColumnDirective, Resize, Sort, Toolbar, ContextMenu, Filter, ExcelExport, PdfExport, Edit, Inject, Group  } from '@syncfusion/ej2-react-grids';
+import { GridComponent, ColumnsDirective, ColumnDirective, Resize, Sort, Toolbar, ContextMenu, Filter, ExcelExport, PdfExport, Edit, Inject, Group,InfiniteScroll  } from '@syncfusion/ej2-react-grids';
 
 import { customersData, contextMenuItems,customerGrid } from '../data/customers';
 import { Header } from '../components';
@@ -18,6 +18,9 @@ const Customers = () => {
        dataSource={customersData}
        allowGrouping={true} 
        groupSettings={groupOptions}
+       enableInfiniteScrolling={true}
+       height={600} 
+       pageSettings={{ pageSize: 80 }}
        allowSorting
        allowExcelExport
        allowPdfExport
@@ -29,7 +32,7 @@ const Customers = () => {
           {/* eslint-disable-next-line react/jsx-props-no-spreading */}
           {customerGrid.map((item, index) => <ColumnDirective key={index} {...item} />)}
         </ColumnsDirective>
-        <Inject services={[Toolbar,Group,Resize, Sort, ContextMenu, Filter, ExcelExport, Edit, PdfExport]} />
+        <Inject services={[Toolbar,Group,Resize, Sort, ContextMenu, Filter, ExcelExport, Edit, PdfExport,InfiniteScroll]} />
 
       </GridComponent>
     </div>
